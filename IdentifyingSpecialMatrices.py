@@ -6,7 +6,7 @@
 # (non-invertible, idempotent, or otherwise) before 
 # calling on the set of functions that carry out the 
 # inversion routine on a 4x4 matrix. Afterwards, the 
-# type of spcial case encountered is classified. This 
+# type of special case encountered is classified. This 
 # piece of code then determines whether the matrix is 
 # singular or not.
 #______________________________________________________
