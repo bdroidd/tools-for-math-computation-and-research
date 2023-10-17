@@ -1,4 +1,3 @@
-#
 # 
 # IdentifyingSpecialMatrices.py
 #
