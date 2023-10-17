@@ -1,9 +1,9 @@
-%
-%   LaplaceTransformSolver_PiecewiseCase.
-%
-%   The following program applies the LaPlace transform method to a set of 
-%   three specific piecewise functions to determine its solution.
-%______________________________________________________________________________
+#
+#   LaplaceTransformSolver_PiecewiseCase.py
+#
+#   The following program applies the LaPlace transform method to a set of 
+#   three specific piecewise functions to determine its solution.
+#______________________________________________________________________________
 
 import matplotlib.pyplot as plt
 import numpy as np
