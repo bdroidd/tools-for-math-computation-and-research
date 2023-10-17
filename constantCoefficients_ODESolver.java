@@ -168,10 +168,10 @@ public class Main
             System.out.println("The exact solution to the differential equation is " + y(x) + ".");
         }
 
-            else
-            {
-                System.out.println("The differential equation does not have a solution.");
-            }
+        else
+        {
+            System.out.println("The differential equation does not have a solution.");
+        }
     }
 
     // driver, which tests the methods above, solving the second-order differential equation with 
