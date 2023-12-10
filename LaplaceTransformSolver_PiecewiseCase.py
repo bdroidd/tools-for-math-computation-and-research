@@ -1,5 +1,5 @@
 #
-#   LaplaceTransformSolver_PiecewiseCase.py
+#   PiecewiseCaseSolver_LaplaceTransform.py
 #
 #   The following program applies the LaPlace transform method to a set of 
 #   three specific piecewise functions to determine its solution.
