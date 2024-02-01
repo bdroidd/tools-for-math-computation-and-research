@@ -8,6 +8,7 @@
 #   equation exists along the set of reals, in this case, R². 
 #   The numerical method implemented may be generalized to a 
 #   higher-order differential equation, for an arbitrary n-value.
+#   This version has not been tested.
 #_______________________________________________________________
 
 
@@ -87,7 +88,7 @@ d(x) = int(input("Finally, write the function, d(x)."))
 
 n
 
-# call method that determines the order of the differential equation; evaluate general or f
+# note: calls method that determines the order of the differential equation; evaluate general or f
 
 
 # requests the initial condition & turbulence (ensure that latter exists for n < 4)
@@ -202,12 +203,8 @@ if(n = 5)
  
 n = int(input("Set the order of the "))
 
+
 # n-value may not update for standard for standard form of solution 
 y_n = y_{n - 1} + c_{n}*h*(k_n)/n + O(h^{n + 1})
 
 disp("The final solution is the set of equations, " + x_n " and " + y_n + ".")
-
-# resources for editing: https://pythonnumericalmethods.berkeley.edu/notebooks/chapter22.05-Predictor-Corrector-Methods.html
-
-# apparent problem: if the general form of the differential equation is defined at the start of the program, then the n-value 
-# is known & fixed
