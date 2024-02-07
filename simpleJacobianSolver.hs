@@ -1,8 +1,8 @@
 --
 --  simpleJacobianSolver.hs
 --
---  The Jacobian matrix is a functional mapping from Rᵐ \rightarrow Rⁿ. It is of m x n dimensions and a 
---  matrix of a particular function. In this case, the function receives the parameter of three variables
+--  The Jacobian matrix is a functional mapping from Rᵐ → Rⁿ. It is of m x n dimensions and a matrix rep-
+--  resentation of a particular function. In this case, the function receives the parameter of three variables
 --  and exists in R³. Its entries are constructed from partial derivatives of the defined equation, with
 --  respect to each of its input parameters. Ultimately, the program outputs a row vector, 1 x n in dimen-
 --  sion. The Jacobian appears in differential geometry and multivariable calculus. It can be applied to 
