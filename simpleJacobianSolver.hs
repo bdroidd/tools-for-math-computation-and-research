@@ -11,14 +11,11 @@
 --
 --_______________________________________________________________________________________________________________
 
-
-
 -- defines symbols utilized in the algorithm
 
 Int x y z
 
 let f = xy^2 + 10z
-
 
 
 -- instantiates a function that evaluates an a partial derivative w.r.t. certain variables
@@ -60,7 +57,6 @@ partialDerivatives x (Mul e1 e2 e3) = Add (Mul (partialDerivative x e1) e2) (Mul
 partialDerivative x (Pow e p) = Mul (Mul (Const p) (Pow e (p - 1))) (partialDerivative x e)
 
 
-
 -- calculates a function with respect to the variable of the coordinate axis, x
 
 main :: IO ()
@@ -72,7 +68,6 @@ main = do
   let ∂F/∂x = partialDerivative "x" expr
 
   putStrLn $ "The partial derivative of f(x, y, z) with respect to x is " ++ show result ++ "."
-
 
 
 -- computes the partial derivative of the function with respect to a second variable, y
@@ -88,7 +83,6 @@ main = do
   putStrLn $ "The partial derivative of f(x, y, z) with respect to y is " ++ show result ++ "."
 
 
-
 -- solves for the partial derivative of the differential equation with respect to a third variable, z
 
 main :: IO ()
@@ -102,7 +96,6 @@ main = do
   putStrLn $ "The partial derivative of f(x, y, z) with respect to z is " ++ show result ++ "."
 
 
-
 -- instantiates an array that describes the Jacobian row vector & adds the PDEs computed above
 
 main :: IO ()
@@ -112,7 +105,6 @@ J = array([∂F/∂x,
            ∂F/∂z])
 
 
-
 -- prints the Jacobian to the user
 
-print("The final Jacobian row vector is ::", J)
+print("The final Jacobian row vector is ::", J, ".")
