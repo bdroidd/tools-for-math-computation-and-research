@@ -7,18 +7,17 @@
 #  differential equation. The program prints the solution to the user.
 #_____________________________________________________________________________
 
-
 import numpy as py
 
 # introduces the variables & defines initial values 
 
-syms x;
+syms x y;
 
 y(0) = 0;
 
 y_0 = 0;
 
-x > -1; % fix formatting 
+x > -1; 
 
 
 # defines the initial differential equation 
@@ -33,22 +32,24 @@ y' = ln(x + 1)/(xy + y - 2x - 2);
 y = int(y');
 
 
-# defines the general equation using Picard's theorem 
+# defines the general form of the solution using Picard's theorem 
 
 phi_{n + 1} = f(t, phi_n (t)), x_n, x);
 
+phi_{n + 1} = int(int(y'), x_0, x);
 
-# computes the terms of the particular solution*
 
-phi0 = 0;
+# computes the terms of the particular solution
 
-phi1 = int(f(t, phi_0 (t)), x_1, x);
+phi_0 = 0;
 
-phi2 = int(f(t, phi_1 (t)), x_2, x);
+phi_1 = int(f(t, phi_0 (t)), x_1, x);
 
-phi3 = int(f(t, phi_2 (t)), x_3, x);
+phi_2 = int(f(t, phi_1 (t)), x_2, x);
 
-phi4 = int(f(t, phi_3 (t)), x_4, x);
+phi_3 = int(f(t, phi_2 (t)), x_3, x);
+
+phi_4 = int(f(t, phi_3 (t)), x_4, x);
 
 solution = phi0 + phi1 + phi2 + phi3 + phi4;
 
