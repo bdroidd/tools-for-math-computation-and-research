@@ -3,8 +3,8 @@
 #
 #  The technique implemented in this program is Picard's method, which can 
 #  be used to resolve initial value problems of the first order. In this 
-#  particular case, a value is given for y(x_0), along with a domain, for a preset
-#  differential equation. The program prints the solution to the user.
+#  particular case, a value is given for y(x_0), along with a domain, for a 
+#  preset differential equation. The program prints the solution to the user.
 #_____________________________________________________________________________
 
 import numpy as py
